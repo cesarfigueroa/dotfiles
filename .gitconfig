@@ -1,0 +1,24 @@
+[user]
+	name = Cesar Figueroa
+	email = cesar.figueroa@me.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/Cesar/.gitignore
+	editor = vim
+[alias]
+	a = add
+	aa = add -u
+	amend = commit --amend
+	c = clone
+	cl = clone --depth=1
+	cm = commit -m
+	co = checkout
+	d = diff HEAD
+	df = "!git --git-dir=$HOME/.config.git/ --work-tree=$HOME"
+	h = help
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	p = push
+	pom = push origin master
+	s = status -uno
+	sa = status
