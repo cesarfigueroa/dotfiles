@@ -20,5 +20,6 @@
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	p = push
 	pom = push origin master
+	r = reflog
 	s = status -uno
 	sa = status
