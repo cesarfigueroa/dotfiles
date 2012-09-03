@@ -43,7 +43,7 @@ set backspace=2
 set spell
 set autowrite
 
-let mapleader = ","
+let mapleader = " "
 autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
 autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
 
