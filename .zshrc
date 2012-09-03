@@ -6,6 +6,9 @@ PROMPT="%c > "
 autoload -U colors
 colors
 
-# Options
+# Enable Vi
 setopt vi
+bindkey "^?" backward-delete-char
+
+# Options
 setopt hist_ignore_all_dups
