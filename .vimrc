@@ -49,4 +49,13 @@ autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
 nnoremap <leader>p :r !pbpaste<CR>
 vnoremap <leader>c :w !pbcopy<CR><CR>
 
+" Show syntax highlighting groups for word under cursor
+nmap <leader>g :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
 call pathogen#infect()
