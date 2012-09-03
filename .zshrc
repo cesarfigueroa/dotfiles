@@ -5,3 +5,7 @@ PROMPT="%c > "
 # Colors
 autoload -U colors
 colors
+
+# Options
+setopt vi
+setopt hist_ignore_all_dups
