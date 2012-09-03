@@ -46,5 +46,7 @@ set autowrite
 let mapleader = " "
 autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
 autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
+nnoremap <leader>p :r !pbpaste<CR>
+vnoremap <leader>c :w !pbcopy<CR><CR>
 
 call pathogen#infect()
