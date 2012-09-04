@@ -22,4 +22,4 @@
 	pom = push origin master
 	r = reflog
 	s = status -uno
-	sa = status
+	u = reset HEAD
