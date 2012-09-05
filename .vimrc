@@ -44,7 +44,7 @@ set spell
 set autowrite
 set clipboard=unnamed
 
-let mapleader = " "
+let mapleader = ","
 autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
 autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
 
