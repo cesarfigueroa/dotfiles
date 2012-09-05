@@ -1,3 +1,5 @@
+let mapleader = ","
+
 " Visual
 syntax enable
 colorscheme Tomorrow-Night
@@ -52,7 +54,6 @@ set spell
 set autowrite
 set clipboard=unnamed
 
-let mapleader = ","
 " Show syntax highlighting groups for word under cursor
 nmap <leader>g :call <SID>SynStack()<CR>
 function! <SID>SynStack()
