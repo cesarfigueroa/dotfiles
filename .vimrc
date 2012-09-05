@@ -42,6 +42,7 @@ set nocompatible
 set backspace=2
 set spell
 set autowrite
+set clipboard=unnamed
 
 let mapleader = " "
 autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
