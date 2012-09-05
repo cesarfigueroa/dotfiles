@@ -14,7 +14,7 @@
 	cl = clone --depth=1
 	cm = commit -m
 	co = checkout
-	d = diff HEAD
+	d = diff
 	df = "!git --git-dir=$HOME/.config.git/ --work-tree=$HOME"
 	h = help
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
