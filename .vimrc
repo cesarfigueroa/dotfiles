@@ -37,6 +37,13 @@ set directory=/tmp
 autocmd BufWritePre * :set binary | set noeol
 autocmd BufWritePost * :set nobinary | set eol
 
+" Ruby
+imap <c-l> <space>=><space>
+autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
+
+" JavaScript
+autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
+
 " Miscellaneous
 set hidden
 set nocompatible
@@ -45,13 +52,7 @@ set spell
 set autowrite
 set clipboard=unnamed
 
-" Mappings
-imap <c-l> <space>=><space>
-
 let mapleader = ","
-autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
-autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
-
 " Show syntax highlighting groups for word under cursor
 nmap <leader>g :call <SID>SynStack()<CR>
 function! <SID>SynStack()
