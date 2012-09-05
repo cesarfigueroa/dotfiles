@@ -3,10 +3,11 @@ let mapleader = ","
 " Visual
 syntax enable
 colorscheme Tomorrow-Night
-highlight LineNr ctermfg=236
 set t_Co=256
 set number
 set showcmd
+highlight LineNr ctermfg=236
+highlight Search ctermfg=15 ctermbg=NONE cterm=underline
 
 " Line Wrapping
 set wrap
