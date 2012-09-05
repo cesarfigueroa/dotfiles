@@ -14,6 +14,7 @@ set linebreak
 set hlsearch
 set incsearch
 set wildmenu
+nnoremap <CR> :nohlsearch<CR>
 
 " Indent
 set autoindent
