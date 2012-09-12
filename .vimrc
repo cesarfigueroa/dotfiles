@@ -1,4 +1,7 @@
+" Initialize
 let mapleader = ","
+call pathogen#infect()
+
 
 " Visual
 syntax enable
@@ -70,4 +73,3 @@ autocmd BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
-call pathogen#infect()
