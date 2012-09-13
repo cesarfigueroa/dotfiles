@@ -2,6 +2,13 @@
 let mapleader = ","
 call pathogen#infect()
 
+" General
+set hidden
+set nocompatible
+set backspace=indent,eol,start
+set spell
+set autowrite
+set clipboard=unnamed
 
 " Visual
 syntax enable
@@ -50,13 +57,6 @@ autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
 " JavaScript
 autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
 
-" Miscellaneous
-set hidden
-set nocompatible
-set backspace=2
-set spell
-set autowrite
-set clipboard=unnamed
 
 " Show syntax highlighting groups for word under cursor
 nmap <leader>g :call <SID>SynStack()<CR>
