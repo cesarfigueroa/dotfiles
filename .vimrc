@@ -9,6 +9,7 @@ set backspace=indent,eol,start
 set spell
 set autowrite
 set clipboard=unnamed
+set history=100
 
 " Visual
 syntax enable
