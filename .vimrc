@@ -52,6 +52,7 @@ set cursorline
 set statusline=\ %F\ %m
 highlight StatusLine ctermfg=14 ctermbg=0
 
+set expandtab
 " ================================= Navigation =================================
 
 set scrolloff=3
