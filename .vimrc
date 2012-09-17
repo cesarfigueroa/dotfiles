@@ -48,6 +48,9 @@ set backup
 set backupdir=/tmp
 set directory=/tmp
 
+set statusline=\ %F\ %m
+highlight StatusLine ctermfg=14 ctermbg=0
+
 " ================================= Navigation =================================
 
 set scrolloff=3
