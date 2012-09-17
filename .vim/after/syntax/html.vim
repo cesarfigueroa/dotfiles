@@ -1,0 +1,2 @@
+syntax keyword htmlTagName contained article aside audio bdi canvas command data datalist details embed figcaption figure footer header hgroup keygen mark math menu meter nav output progress rp rt ruby section source summary svg time track video wrb
+syntax keyword htmlArg contained autofocus contenteditable contextmenu draggable hidden item itemprop list max min placeholder spellcheck step subject
