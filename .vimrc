@@ -1,4 +1,5 @@
 " Initialize
+syntax enable
 colorscheme solarized
 set background=dark
 filetype plugin indent on
@@ -6,28 +7,15 @@ set encoding=utf-8
 let mapleader = ","
 call pathogen#infect()
 
-" General
-set hidden
-set nocompatible
-set backspace=indent,eol,start
-set spell
+" =================================== General ==================================
+
 set autowrite
 set backspace=indent,eol,start
 set clipboard=unnamed
+set hidden
 set history=100
-
-" Visual
-syntax enable
-colorscheme Tomorrow-Night
-set t_Co=256
-set number
-set showcmd
-highlight LineNr ctermfg=236
-highlight Search ctermfg=15 ctermbg=NONE cterm=underline
-
-" Line Wrapping
-set wrap
-set linebreak
+set nocompatible
+set spell
 
 " Search
 set hlsearch
@@ -35,26 +23,38 @@ set ignorecase smartcase
 set incsearch
 set wildmenu
 nnoremap <CR> :nohlsearch<CR>
-
-" Indent
-set autoindent
-set smartindent
-set softtabstop=2
-set shiftwidth=2
-
+highlight Search ctermfg=15 ctermbg=none cterm=underline
 
 " Backup
 set backup
 set backupdir=/tmp
 set directory=/tmp
 
+" =================================== Visual ===================================
+
 set cursorline
+set number
+set showcmd
+set t_Co=256
+
+" Status Line
+set laststatus=2
 set statusline=\ %F\ %m
 highlight StatusLine ctermfg=14 ctermbg=0
 
+" Line Wrapping
+set linebreak
+set wrap
+
+" Indentation
+set autoindent
 set expandtab
 set listchars=eol:¬
 nnoremap <leader>l :set list!<CR>
+set shiftwidth=2
+set smartindent
+set softtabstop=2
+
 " ================================= Navigation =================================
 
 set scrolloff=3
@@ -120,6 +120,18 @@ augroup vim
   autocmd FileType vim setlocal commentstring=\"\ %s
 augroup END
 
+" =============================== Miscellaneous ================================
+
+augroup miscellaneous
+  autocmd!
+
+  " Jump to last cursor position
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+augroup END
+
 " Show syntax highlighting groups for word under cursor
 nnoremap <leader>g :call <SID>SynStack()<CR>
 function! <SID>SynStack()
@@ -128,12 +140,6 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
-" Jump to last cursor position
-autocmd BufReadPost *
-  \ if line("'\"") > 1 && line("'\"") <= line("$") |
-  \   exe "normal! g`\"" |
-  \ endif
 
 " Rename current file
 function! RenameFile()
