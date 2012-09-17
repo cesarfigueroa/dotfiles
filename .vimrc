@@ -1,6 +1,7 @@
 " Initialize
 colorscheme solarized
 set background=dark
+filetype plugin indent on
 let mapleader = ","
 call pathogen#infect()
 
