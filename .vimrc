@@ -29,6 +29,7 @@ set linebreak
 
 " Search
 set hlsearch
+set ignorecase smartcase
 set incsearch
 set wildmenu
 nnoremap <CR> :nohlsearch<CR>
