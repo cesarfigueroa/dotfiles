@@ -1,4 +1,6 @@
 " Initialize
+colorscheme solarized
+set background=dark
 let mapleader = ","
 call pathogen#infect()
 
