@@ -54,6 +54,7 @@ nnoremap <leader>l :set list!<CR>
 set shiftwidth=2
 set smartindent
 set softtabstop=2
+autocmd BufRead,BufWrite *.gitconfig :set noexpandtab | set shiftwidth=8 | set softtabstop=0
 
 " ================================= Navigation =================================
 
