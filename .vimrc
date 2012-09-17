@@ -48,6 +48,7 @@ set backup
 set backupdir=/tmp
 set directory=/tmp
 
+set cursorline
 set statusline=\ %F\ %m
 highlight StatusLine ctermfg=14 ctermbg=0
 
