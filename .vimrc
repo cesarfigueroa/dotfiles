@@ -86,22 +86,39 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-l> <c-w>l
 
-" Ruby
-imap <c-l> <space>=><space>
-autocmd Filetype ruby nnoremap <leader>r :!ruby %<CR>
 " =============================== Abbreviations ================================
 
 iabbrev lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
+" ============================= Language Specific ==============================
+
+" HTML
+augroup html
+  autocmd!
   autocmd FileType html nnoremap <leader>r :silent !open -a Safari %<CR>:redraw!<CR>
   autocmd FileType html setlocal commentstring=<!--\ %s\ -->
+augroup END
 
 " JavaScript
-autocmd Filetype javascript nnoremap <leader>r :!jsc %<CR>
+augroup javascript
+  autocmd!
+  autocmd FileType javascript nnoremap <leader>r :!jsc %<CR>
   autocmd FileType javascript setlocal commentstring=//\ %s
+augroup END
 
+" Ruby
+inoremap <c-l> <space>=><space>
+augroup ruby
+  autocmd!
+  autocmd FileType ruby nnoremap <leader>r :!ruby %<CR>
   autocmd FileType ruby setlocal commentstring=#\ %s
+augroup END
+
+" VimL
+augroup vim
+  autocmd!
   autocmd FileType vim setlocal commentstring=\"\ %s
+augroup END
 
 " Show syntax highlighting groups for word under cursor
 nnoremap <leader>g :call <SID>SynStack()<CR>
