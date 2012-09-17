@@ -46,6 +46,36 @@ set directory=/tmp
 " Remove End of Line
 autocmd BufWritePre * :set binary | set noeol
 autocmd BufWritePost * :set nobinary | set eol
+" ================================= Navigation =================================
+
+set scrolloff=3
+
+" Force hjkl
+noremap <Up> <nop>
+noremap <Left> <nop>
+noremap <Down> <nop>
+noremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Left> <nop>
+inoremap <Down> <nop>
+inoremap <Right> <nop>
+
+" Create splits with hjkl
+nnoremap <leader>swk :topleft new<CR>
+nnoremap <leader>swl :botright vnew<CR>
+nnoremap <leader>swj :botright new<CR>
+nnoremap <leader>swh :topleft vnew<CR>
+
+nnoremap <leader>sbk :leftabove new<CR>
+nnoremap <leader>sbl :leftabove vnew<CR>
+nnoremap <leader>sbj :rightbelow new<CR>
+nnoremap <leader>sbh :rightbelow vnew<CR>
+
+" Move around splits with <c-hjkl>
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-l> <c-w>l
 
 " Ruby
 imap <c-l> <space>=><space>
