@@ -45,9 +45,6 @@ set backup
 set backupdir=/tmp
 set directory=/tmp
 
-" Remove End of Line
-autocmd BufWritePre * :set binary | set noeol
-autocmd BufWritePost * :set nobinary | set eol
 " ================================= Navigation =================================
 
 set scrolloff=3
