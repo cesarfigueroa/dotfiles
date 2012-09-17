@@ -24,3 +24,4 @@
 	r = reflog
 	s = status -uno
 	u = reset HEAD
+	ws = diff --check
