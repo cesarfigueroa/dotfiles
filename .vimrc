@@ -53,6 +53,8 @@ set statusline=\ %F\ %m
 highlight StatusLine ctermfg=14 ctermbg=0
 
 set expandtab
+set listchars=eol:¬
+nnoremap <leader>l :set list!<CR>
 " ================================= Navigation =================================
 
 set scrolloff=3
