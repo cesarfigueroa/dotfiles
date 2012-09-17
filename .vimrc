@@ -36,11 +36,6 @@ set smartindent
 set softtabstop=2
 set shiftwidth=2
 
-if exists("&breakindent")
-  set breakindent
-  autocmd VimEnter,GUIEnter,BufNewFile,BufRead * set breakindentshift=2
-  set breakindentshift=2
-endif
 
 " Backup
 set backup
