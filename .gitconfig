@@ -10,6 +10,8 @@
 	a = add
 	aa = add -u
 	amend = commit --amend
+	assume = update-index --assume-unchanged
+	noassume = update-index --no-assume-unchanged
 	c = clone
 	cl = clone --depth=1
 	cm = commit -m
