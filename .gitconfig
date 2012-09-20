@@ -18,7 +18,6 @@
 	co = checkout
 	d = diff
 	dc = diff --cached
-	df = "!git --git-dir=$HOME/.config.git/ --work-tree=$HOME"
 	h = help
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
 	p = push

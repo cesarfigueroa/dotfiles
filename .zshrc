@@ -12,3 +12,6 @@ bindkey "^?" backward-delete-char
 
 # Options
 setopt hist_ignore_all_dups
+
+# Aliases
+alias config='git --git-dir=$HOME/.config.git/ --work-tree=$HOME'
