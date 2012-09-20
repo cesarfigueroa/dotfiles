@@ -12,6 +12,7 @@
 	amend = commit --amend
 	assume = update-index --assume-unchanged
 	noassume = update-index --no-assume-unchanged
+	b = branch
 	c = clone
 	cl = clone --depth=1
 	cm = commit -m
