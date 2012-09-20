@@ -1,4 +1,6 @@
 " Initialize
+set nocompatible
+
 syntax enable
 colorscheme solarized
 set background=dark
@@ -14,7 +16,6 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 set hidden
 set history=100
-set nocompatible
 set spell
 
 " Search
