@@ -24,7 +24,7 @@ set ignorecase smartcase
 set incsearch
 set wildmenu
 nnoremap <CR> :nohlsearch<CR>
-highlight Search ctermfg=15 ctermbg=none cterm=underline
+highlight Search ctermfg=7 ctermbg=none cterm=underline
 
 " Backup
 set backup
@@ -41,7 +41,7 @@ set t_Co=256
 " Status Line
 set laststatus=2
 set statusline=\ %F\ %m
-highlight StatusLine ctermfg=14 ctermbg=0
+highlight StatusLine ctermbg=0 ctermfg=14
 
 " Line Wrapping
 set linebreak
