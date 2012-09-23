@@ -1,0 +1,1 @@
+syn keyword cssTagName article aside audio bdi canvas command data datalist details embed figcaption figure footer header hgroup keygen mark math menu meter nav output progress rp rt ruby section source summary svg time track video wrb
