@@ -140,15 +140,6 @@ augroup miscellaneous
     \ endif
 augroup END
 
-" Show syntax highlighting groups for word under cursor
-nnoremap <leader>g :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
-
 " Rename current file
 function! RenameFile()
   let old_name = expand('%')
