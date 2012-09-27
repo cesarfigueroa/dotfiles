@@ -78,9 +78,9 @@ nnoremap <leader>swj :botright new<CR>
 nnoremap <leader>swh :topleft vnew<CR>
 
 nnoremap <leader>sbk :leftabove new<CR>
-nnoremap <leader>sbl :leftabove vnew<CR>
+nnoremap <leader>sbl :rightbelow vnew<CR>
 nnoremap <leader>sbj :rightbelow new<CR>
-nnoremap <leader>sbh :rightbelow vnew<CR>
+nnoremap <leader>sbh :leftabove vnew<CR>
 
 " Move around splits with <c-hjkl>
 nnoremap <c-k> <c-w>k
