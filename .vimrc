@@ -122,6 +122,11 @@ augroup vim
   autocmd FileType vim setlocal commentstring=\"\ %s
 augroup END
 
+" Python
+augroup python
+  autocmd!
+  autocmd FileType python nnoremap <leader>r :!python %<CR>
+augroup END
 " =============================== Miscellaneous ================================
 
 augroup miscellaneous
