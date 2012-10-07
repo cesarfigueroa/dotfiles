@@ -127,6 +127,7 @@ augroup python
   autocmd!
   autocmd FileType python nnoremap <leader>r :!python %<CR>
 augroup END
+
 " =============================== Miscellaneous ================================
 
 augroup miscellaneous
@@ -137,12 +138,6 @@ augroup miscellaneous
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
-
-  " Always switch to current file directory
-  " autocmd BufEnter *
-  "   \ if bufname("") !~ "^\[A-Za-z0-9\]*://" |
-  "   \   lcd %:p:h |
-  "   \ endif
 augroup END
 
 " Rename current file
