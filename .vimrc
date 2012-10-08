@@ -128,6 +128,12 @@ augroup python
   autocmd FileType python nnoremap <leader>r :!python %<CR>
 augroup END
 
+" Shell
+augroup shell
+  autocmd!
+  autocmd FileType shell nnoremap <leader>r :! %<CR>
+augroup END
+
 " =============================== Miscellaneous ================================
 
 augroup miscellaneous
