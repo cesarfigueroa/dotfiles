@@ -24,7 +24,6 @@ set ignorecase smartcase
 set incsearch
 set wildmenu
 nnoremap <CR> :nohlsearch<CR>
-highlight Search ctermfg=7 ctermbg=none cterm=underline
 
 " Backup
 set backup
@@ -41,7 +40,6 @@ set t_Co=256
 " Status Line
 set laststatus=2
 set statusline=\ %F\ %m
-highlight StatusLine ctermbg=0 ctermfg=14
 
 " Line Wrapping
 set linebreak
@@ -56,6 +54,13 @@ set shiftwidth=2
 set smartindent
 set softtabstop=2
 autocmd BufRead,BufWrite *.gitconfig :set noexpandtab | set shiftwidth=8 | set softtabstop=0
+
+" Highlights
+highlight Cursor ctermfg=13
+highlight ErrorMsg ctermbg=7
+highlight Search ctermfg=7 ctermbg=none cterm=underline
+highlight StatusLine ctermbg=0 ctermfg=14
+highlight Visual ctermbg=10 ctermfg=7
 
 " ================================= Navigation =================================
 
