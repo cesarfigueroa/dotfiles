@@ -1,0 +1,12 @@
+#!/bin/bash
+
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+chflags nohidden ~/Library
+defaults write com.apple.dock no-glass -bool true
+
+processes=(Finder Dock)
+for i in "${processes[@]}"
+do
+  killall $i
+done
