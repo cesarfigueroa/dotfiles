@@ -1,29 +1,29 @@
 [user]
-	name = Cesar Figueroa
-	email = cesar.figueroa@me.com
+        name = Cesar Figueroa
+        email = cesar.figueroa@me.com
 [color]
-	ui = true
+        ui = true
 [core]
-	excludesfile = /Users/Cesar/.gitignore
-	editor = vim
+        excludesfile = /Users/Cesar/.gitignore
+        editor = vim
 [alias]
-	a = add
-	aa = add -u
-	amend = commit --amend
-	assume = update-index --assume-unchanged
-	noassume = update-index --no-assume-unchanged
-	b = branch
-	c = clone
-	cl = clone --depth=1
-	cm = commit -m
-	co = checkout
-	d = diff
-	dc = diff --cached
-	h = help
-	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
-	p = push
-	pom = push origin master
-	r = reflog
-	s = status -uno
-	u = reset HEAD
-	ws = diff --check
+        a = add
+        aa = add -u
+        amend = commit --amend
+        assume = update-index --assume-unchanged
+        noassume = update-index --no-assume-unchanged
+        b = branch
+        c = clone
+        cl = clone --depth=1
+        cm = commit -m
+        co = checkout
+        d = diff
+        dc = diff --cached
+        h = help
+        l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
+        p = push
+        pom = push origin master
+        r = reflog
+        s = status -uno
+        u = reset HEAD
+        ws = diff --check
