@@ -53,7 +53,6 @@ nnoremap <leader>l :set list!<CR>
 set shiftwidth=2
 set smartindent
 set softtabstop=2
-autocmd BufRead,BufWrite *.gitconfig :set noexpandtab | set shiftwidth=8 | set softtabstop=0
 
 " Highlights
 highlight Cursor ctermfg=13
@@ -131,12 +130,19 @@ augroup END
 augroup python
   autocmd!
   autocmd FileType python nnoremap <leader>r :!python %<CR>
+  autocmd FileType python :set shiftwidth=4 | set softtabstop=4
 augroup END
 
 " Shell
 augroup shell
   autocmd!
   autocmd FileType shell nnoremap <leader>r :! %<CR>
+augroup END
+
+" gitconfig
+augroup gitconfig
+  autocmd!
+  autocmd FileType gitconfig :set shiftwidth=8 | set softtabstop=8
 augroup END
 
 " =============================== Miscellaneous ================================
