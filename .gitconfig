@@ -27,3 +27,5 @@
         s = status -uno
         u = reset HEAD
         ws = diff --check
+[credential]
+	helper = osxkeychain
