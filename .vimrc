@@ -99,6 +99,7 @@ iabbrev lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 " ============================= Language Specific ==============================
 
 " HTML
+inoremap <leader>/ </<C-X><C-O>
 augroup html
   autocmd!
   autocmd FileType html nnoremap <leader>r :silent !open -a Safari %<CR>:redraw!<CR>
