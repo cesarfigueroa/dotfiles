@@ -17,6 +17,8 @@ set clipboard=unnamed
 set hidden
 set history=100
 set spell
+set exrc
+set nosecure
 
 " Search
 set hlsearch
