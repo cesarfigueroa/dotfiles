@@ -17,6 +17,7 @@
         cl = clone --depth=1
         cm = commit -m
         co = checkout
+        cp = cherry-pick
         d = diff
         dc = diff --cached
         h = help
