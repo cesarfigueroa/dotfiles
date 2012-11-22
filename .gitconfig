@@ -25,6 +25,7 @@
         p = push
         pom = push origin master
         r = reflog
+        ra = remote add
         s = status -uno
         u = reset HEAD
         ws = diff --check
