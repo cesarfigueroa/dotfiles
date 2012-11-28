@@ -32,3 +32,5 @@
         ws = diff --check
 [credential]
 	helper = osxkeychain
+[help]
+	autocorrect = 1
