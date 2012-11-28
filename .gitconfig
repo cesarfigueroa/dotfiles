@@ -18,8 +18,8 @@
         cm = commit -m
         co = checkout
         cp = cherry-pick
-        d = diff
-        ds = diff --staged
+        d = diff --word-diff
+        ds = diff --staged --word-diff
         h = help
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
         p = push
