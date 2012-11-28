@@ -19,7 +19,7 @@
         co = checkout
         cp = cherry-pick
         d = diff
-        dc = diff --cached
+        ds = diff --staged
         h = help
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
         p = push
