@@ -28,6 +28,7 @@
         ra = remote add
         s = status -uno
         u = reset HEAD
+        undo = reset --soft HEAD^
         ws = diff --check
 [credential]
 	helper = osxkeychain
