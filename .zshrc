@@ -15,3 +15,4 @@ setopt hist_ignore_all_dups
 
 # Aliases
 alias config='git --git-dir=$HOME/.config.git/ --work-tree=$HOME'
+alias rm='trash'
