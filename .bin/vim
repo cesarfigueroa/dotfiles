@@ -1,0 +1,6 @@
+#!/bin/sh
+
+hg clone https://vim.googlecode.com/hg/ vim
+cd vim
+./configure --enable-pythoninterp --enable-python3interp --enable-rubyinterp --enable-multibyte --with-x
+make && sudo make install
