@@ -154,6 +154,12 @@ augroup markdown
   autocmd FileType markdown :set shiftwidth=4 | set softtabstop=4
 augroup END
 
+" Cucumber
+augroup cucumber
+  autocmd!
+  autocmd FileType cucumber nnoremap <leader>r :! cucumber %<CR>
+augroup END
+
 " =============================== Miscellaneous ================================
 
 augroup miscellaneous
