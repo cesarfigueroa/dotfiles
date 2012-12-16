@@ -148,6 +148,7 @@ augroup gitconfig
   autocmd FileType gitconfig :set shiftwidth=8 | set softtabstop=8
 augroup END
 
+" Markdown
 augroup markdown
   autocmd!
   autocmd FileType markdown :set shiftwidth=4 | set softtabstop=4
