@@ -24,6 +24,7 @@
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
         p = push
         pom = push origin master
+        phm = push heroku master
         r = reflog
         ra = remote add
         s = status -uno
