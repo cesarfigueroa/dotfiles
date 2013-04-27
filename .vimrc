@@ -100,63 +100,41 @@ iabbrev lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 
 " ============================= Language Specific ==============================
 
-" HTML
-augroup html
+inoremap <c-l> <space>=><space>
+
+augroup languages
   autocmd!
+
+" HTML
   autocmd FileType html nnoremap <leader>r :silent !open -a Safari %<CR>:redraw!<CR>
   autocmd FileType html setlocal commentstring=<!--\ %s\ -->
   autocmd FileType html inoremap <leader>/ </<C-X><C-O>
-augroup END
 
 " JavaScript
-augroup javascript
-  autocmd!
   autocmd FileType javascript nnoremap <leader>r :!jsc %<CR>
   autocmd FileType javascript setlocal commentstring=//\ %s
-augroup END
 
 " Ruby
-inoremap <c-l> <space>=><space>
-augroup ruby
-  autocmd!
   autocmd FileType ruby nnoremap <leader>r :!ruby %<CR>
   autocmd FileType ruby setlocal commentstring=#\ %s
-augroup END
 
 " VimL
-augroup vim
-  autocmd!
   autocmd FileType vim setlocal commentstring=\"\ %s
-augroup END
 
 " Python
-augroup python
-  autocmd!
   autocmd FileType python nnoremap <leader>r :!python %<CR>
   autocmd FileType python :set shiftwidth=4 | set softtabstop=4
-augroup END
 
 " Shell
-augroup shell
-  autocmd!
   autocmd FileType shell nnoremap <leader>r :! %<CR>
-augroup END
 
 " gitconfig
-augroup gitconfig
-  autocmd!
   autocmd FileType gitconfig :set shiftwidth=8 | set softtabstop=8
-augroup END
 
 " Markdown
-augroup markdown
-  autocmd!
   autocmd FileType markdown :set shiftwidth=4 | set softtabstop=4
-augroup END
 
 " Cucumber
-augroup cucumber
-  autocmd!
   autocmd FileType cucumber nnoremap <leader>r :! cucumber %<CR>
 augroup END
 
