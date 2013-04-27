@@ -136,6 +136,9 @@ augroup languages
 
 " Cucumber
   autocmd FileType cucumber nnoremap <leader>r :! cucumber %<CR>
+
+" Rabl
+  autocmd BufNewFile,BufRead *.rabl set filetype=ruby
 augroup END
 
 " =============================== Miscellaneous ================================
