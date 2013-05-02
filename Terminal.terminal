@@ -157,6 +157,8 @@
 	aGl2ZXLRFxhUcm9vdIABCBEaIy0yNztBSE5bYo6Qkpeiq7O2v9HU2QAAAAAAAAEBAAAA
 	AAAAABkAAAAAAAAAAAAAAAAAAADb
 	</data>
+	<key>Bell</key>
+	<false/>
 	<key>CursorBlink</key>
 	<true/>
 	<key>CursorColor</key>
@@ -179,6 +181,8 @@
 	</data>
 	<key>FontAntialias</key>
 	<true/>
+	<key>Linewrap</key>
+	<true/>
 	<key>ProfileCurrentVersion</key>
 	<real>2.02</real>
 	<key>SelectionColor</key>
@@ -190,6 +194,8 @@
 	dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
+	<key>ShowActiveProcessInTitle</key>
+	<true/>
 	<key>ShowDimensionsInTitle</key>
 	<false/>
 	<key>TextBoldColor</key>
@@ -210,6 +216,8 @@
 	dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
+	<key>VisualBell</key>
+	<true/>
 	<key>WindowTitle</key>
 	<string></string>
 	<key>columnCount</key>
