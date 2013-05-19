@@ -1,1 +1,3 @@
---skip-bundle --skip-javascript --old-style-hash
+--skip-bundle
+--skip-javascript
+--old-style-hash
