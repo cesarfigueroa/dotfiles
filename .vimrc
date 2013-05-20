@@ -141,6 +141,17 @@ augroup languages
   autocmd BufNewFile,BufRead *.rabl set filetype=ruby
 augroup END
 
+" =================================== CTRL-P ===================================
+
+function! SetLastStatus(number)
+  execute 'set laststatus='.number
+endfunction
+
+let g:ctrlp_status_func = {
+  \ 'enter': 'SetLastStatus(0)',
+  \ 'exit': 'SetLastStatus(2)'
+\ }
+
 " =============================== Miscellaneous ================================
 
 augroup miscellaneous
