@@ -152,6 +152,8 @@ let g:ctrlp_status_func = {
   \ 'exit': 'SetLastStatus(2)'
 \ }
 
+set wildignore+=*/tmp/*,*.log,*.db
+
 " =============================== Miscellaneous ================================
 
 augroup miscellaneous
