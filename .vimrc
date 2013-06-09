@@ -61,7 +61,7 @@ highlight Cursor ctermfg=13
 highlight ErrorMsg ctermbg=7
 highlight Search ctermfg=7 ctermbg=none cterm=underline
 highlight StatusLine ctermbg=0 ctermfg=14
-highlight Visual ctermbg=10 ctermfg=7
+highlight Visual ctermbg=8 ctermfg=7
 
 " ================================= Navigation =================================
 
