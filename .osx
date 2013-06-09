@@ -5,6 +5,7 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 chflags nohidden ~/Library
 defaults write com.apple.dock no-glass -bool true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write NSGlobalDomain KeyRepeat -int 0
 
 processes=(Finder Dock)
 for i in "${processes[@]}"
