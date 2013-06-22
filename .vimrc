@@ -137,6 +137,8 @@ augroup languages
 " Cucumber
   autocmd FileType cucumber nnoremap <leader>r :! cucumber %<CR>
 
+" RSpec
+  autocmd BufRead,BufNewFile *_spec.rb nnoremap <leader>r :! rspec %<CR>
 augroup END
 
 " =================================== CTRL-P ===================================
