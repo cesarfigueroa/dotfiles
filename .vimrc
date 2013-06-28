@@ -139,6 +139,10 @@ augroup languages
 
 " RSpec
   autocmd BufRead,BufNewFile *_spec.rb nnoremap <leader>r :! rspec %<CR>
+
+" Slim
+  autocmd BufRead,BufNewFile *.slim :set filetype=slim
+  autocmd FileType slim setlocal commentstring=\/\ %s
 augroup END
 
 " =================================== CTRL-P ===================================
