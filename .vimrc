@@ -126,7 +126,7 @@ augroup languages
   autocmd FileType python :set shiftwidth=4 | set softtabstop=4
 
 " Shell
-  autocmd FileType shell nnoremap <leader>r :! %<CR>
+  autocmd FileType sh nnoremap <leader>r :! sh %<CR>
 
 " gitconfig
   autocmd FileType gitconfig :set shiftwidth=8 | set softtabstop=8
