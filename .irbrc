@@ -1,3 +1,5 @@
+require 'irb/completion'
+
 IRB.conf[:PROMPT][:CUSTOM] = {
   PROMPT_I: '> ',
   PROMPT_C: '>> ',
