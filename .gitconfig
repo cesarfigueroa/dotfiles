@@ -30,6 +30,7 @@
         s = status -uno
         u = reset HEAD
         undo = reset --soft HEAD^
+        wd = diff --word-diff
         ws = diff --check
 [credential]
 	helper = osxkeychain
