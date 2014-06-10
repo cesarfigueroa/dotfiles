@@ -15,6 +15,7 @@ bindkey "^?" backward-delete-char
 
 # Options
 setopt hist_ignore_all_dups
+unsetopt nomatch
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
   'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
