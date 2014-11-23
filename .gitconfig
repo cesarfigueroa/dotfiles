@@ -27,7 +27,7 @@
         pom = push origin master
         r = reflog
         ra = remote add
-        s = status -uno
+        s = status -u
         u = reset HEAD
         undo = reset --soft HEAD^
         wd = diff --word-diff
