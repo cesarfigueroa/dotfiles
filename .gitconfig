@@ -25,6 +25,7 @@
         p = push
         phm = push heroku master
         pom = push origin master
+        r = remote -v
         ra = remote add
         rl = reflog
         rr = remote remove
