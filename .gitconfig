@@ -20,6 +20,8 @@
         cp = cherry-pick
         d = diff
         ds = diff --staged
+        dsw = diff --staged --color-words
+        dw = diff --color-words
         h = help
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit
         p = push
