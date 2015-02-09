@@ -31,7 +31,7 @@
         ra = remote add
         rl = reflog
         rr = remote remove
-        s = status -u
+        s = status -su
         u = reset HEAD
         undo = reset --soft HEAD^
         wd = diff --word-diff
