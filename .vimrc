@@ -156,7 +156,7 @@ let g:ctrlp_status_func = {
   \ 'exit': 'SetLastStatus(2)'
 \ }
 
-set wildignore+=*/tmp/*,*.log,*.db
+set wildignore+=*/tmp/*,*.log,*.db,*/node_modules/*
 
 " =============================== Miscellaneous ================================
 
