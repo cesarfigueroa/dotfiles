@@ -16,7 +16,7 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 set hidden
 set history=100
-set spell
+set nospell
 set exrc
 set nosecure
 
