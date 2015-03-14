@@ -2,6 +2,10 @@
 autoload -U compinit
 compinit -C
 
+if which rbenv > /dev/null;
+  then eval "$(rbenv init - zsh)";
+fi
+
 export PATH="/usr/local/heroku/bin:/usr/local/bin:$PATH:/usr/local/sbin"
 
 # Colors
