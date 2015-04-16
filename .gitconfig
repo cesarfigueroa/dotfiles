@@ -27,8 +27,6 @@
         h = help
         l = log --graph --pretty=format:'%Cred%h%Creset - %s %Cblue(%an) %Cgreen(%cr)%C(yellow)%d%Creset' --abbrev-commit
         p = push
-        phm = push heroku master
-        pom = push origin master
         r = remote --verbose
         ra = remote add
         rl = reflog
@@ -42,3 +40,5 @@
 	helper = osxkeychain
 [help]
 	autocorrect = 0
+[push]
+	default = simple
