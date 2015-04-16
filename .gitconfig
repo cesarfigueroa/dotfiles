@@ -9,7 +9,7 @@
 	pager = 
 [alias]
         a = add
-        aa = add -u
+        au = add --update
         amend = commit --amend
         assume = update-index --assume-unchanged
         noassume = update-index --no-assume-unchanged
