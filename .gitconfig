@@ -29,11 +29,11 @@
         p = push
         phm = push heroku master
         pom = push origin master
-        r = remote -v
+        r = remote --verbose
         ra = remote add
         rl = reflog
         rr = remote remove
-        s = status -su
+        s = status --untracked-files
         u = reset HEAD
         undo = reset --soft HEAD^
         wd = diff --word-diff
