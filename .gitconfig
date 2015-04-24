@@ -28,7 +28,7 @@
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit
         p = push
         r = remote --verbose
-        ra = remote add
+        ra = rebase --abort
         rc = rebase --continue
         rl = reflog
         rr = remote remove
