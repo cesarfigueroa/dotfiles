@@ -29,6 +29,7 @@
         p = push
         r = remote --verbose
         ra = remote add
+        rc = rebase --continue
         rl = reflog
         rr = remote remove
         s = status --untracked-files
