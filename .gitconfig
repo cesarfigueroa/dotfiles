@@ -11,7 +11,7 @@
         a = add
         ap = add --patch
         au = add --update
-        amend = commit --amend
+        amend = commit --amend -C HEAD
         assume = update-index --assume-unchanged
         noassume = update-index --no-assume-unchanged
         b = branch
