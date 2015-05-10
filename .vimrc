@@ -157,6 +157,8 @@ let g:ctrlp_status_func = {
   \ 'exit': 'SetLastStatus(2)'
 \ }
 
+let g:ctrlp_max_files=0
+
 set wildignore+=*/tmp/*,*.log,*.db,*/node_modules/*,_site
 
 " =============================== Miscellaneous ================================
