@@ -2,7 +2,7 @@
 set nocompatible
 
 syntax enable
-colorscheme solarized
+colorscheme Tomorrow-Night
 set background=dark
 filetype plugin indent on
 set encoding=utf-8
