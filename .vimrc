@@ -131,9 +131,6 @@ augroup languages
 " gitconfig
   autocmd FileType gitconfig :set shiftwidth=8 | set softtabstop=8
 
-" Markdown
-  autocmd FileType markdown :set shiftwidth=4 | set softtabstop=4
-
 " Cucumber
   autocmd FileType cucumber nnoremap <leader>r :! cucumber %<CR>
 
