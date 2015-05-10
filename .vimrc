@@ -141,6 +141,9 @@ augroup languages
 " Slim
   autocmd BufRead,BufNewFile *.slim :set filetype=slim
   autocmd FileType slim setlocal commentstring=\/\ %s
+
+" Handlebars
+  autocmd BufRead,BufNewFile *.handlebars :set filetype=html
 augroup END
 
 " =================================== CTRL-P ===================================
