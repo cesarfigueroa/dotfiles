@@ -19,6 +19,7 @@ set history=100
 set nospell
 set exrc
 set nosecure
+set lazyredraw
 
 " Search
 set hlsearch
