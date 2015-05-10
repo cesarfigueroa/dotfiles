@@ -89,7 +89,7 @@ nnoremap <leader>sbl :rightbelow vnew<CR>
 nnoremap <leader>sbj :rightbelow new<CR>
 nnoremap <leader>sbh :leftabove vnew<CR>
 
-" Move around splits with <c-hjkl>
+" Move around splits with <[ctrl] + hjkl>
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
