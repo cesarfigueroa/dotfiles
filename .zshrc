@@ -7,6 +7,7 @@ if which rbenv > /dev/null;
 fi
 
 export PATH="/usr/local/heroku/bin:/usr/local/bin:$PATH:/usr/local/sbin"
+cdpath=(~ ~/Developer)
 
 # Colors
 autoload -U colors
