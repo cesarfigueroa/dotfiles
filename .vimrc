@@ -33,6 +33,9 @@ set backup
 set backupdir=/tmp
 set directory=/tmp
 
+" Whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " =================================== Visual ===================================
 
 set cursorline
