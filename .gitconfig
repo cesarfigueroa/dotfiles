@@ -31,14 +31,11 @@
         p = push
         psu = ! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
         pl = pull --ff-only
-        r = remote --verbose
         ra = rebase --abort
         rc = rebase --continue
         rl = reflog
-        rr = remote remove
         s = status --untracked-files
         u = reset HEAD
-        undo = reset --soft HEAD^
         wd = diff --word-diff
         ws = diff --check
 [credential]
