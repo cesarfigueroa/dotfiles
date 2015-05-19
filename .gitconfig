@@ -29,6 +29,7 @@
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit
         ll = ! git l master..
         p = push
+        psu = ! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
         pl = pull --ff-only
         r = remote --verbose
         ra = rebase --abort
