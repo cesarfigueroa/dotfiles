@@ -159,7 +159,10 @@ let g:ctrlp_status_func = {
 
 let g:ctrlp_max_files=0
 
-set wildignore+=*/tmp/*,*.log,*.db,*/node_modules/*,_site
+set wildignore+=node_modules/*,tmp/*,vendor/*,_site/*
+set wildignore+=*.db,*.log
+set wildignore+=*.otf,*.ttf,*.woff
+set wildignore+=*.gif,*.jpg,*.png
 
 " =============================== Miscellaneous ================================
 
