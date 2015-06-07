@@ -157,9 +157,8 @@ let g:ctrlp_status_func = {
 \ }
 
 let g:ctrlp_max_files=0
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-set wildignore+=node_modules/*,tmp/*,vendor/*,_site/*
-set wildignore+=*.db,*.log
 set wildignore+=*.otf,*.ttf,*.woff
 set wildignore+=*.gif,*.jpg,*.png
 
