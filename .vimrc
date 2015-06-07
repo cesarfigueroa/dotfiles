@@ -115,7 +115,7 @@ augroup languages
   autocmd FileType html inoremap <leader>/ </<C-X><C-O>
 
 " JavaScript
-  autocmd FileType javascript nnoremap <leader>r :!jsc %<CR>
+  autocmd FileType javascript nnoremap <leader>r :!node %<CR>
   autocmd FileType javascript setlocal commentstring=//\ %s
 
 " Ruby
