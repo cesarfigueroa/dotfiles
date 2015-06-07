@@ -119,7 +119,6 @@ augroup languages
   autocmd FileType javascript setlocal commentstring=//\ %s
 
 " Ruby
-  autocmd FileType ruby nnoremap <leader>r :!ruby %<CR>
   autocmd FileType ruby setlocal commentstring=#\ %s
 
 " VimL
@@ -128,9 +127,6 @@ augroup languages
 " Python
   autocmd FileType python nnoremap <leader>r :!python %<CR>
   autocmd FileType python :set shiftwidth=4 | set softtabstop=4
-
-" Shell
-  autocmd FileType sh nnoremap <leader>r :! sh %<CR>
 
 " gitconfig
   autocmd FileType gitconfig :set shiftwidth=8 | set softtabstop=8
