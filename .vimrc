@@ -33,9 +33,6 @@ set backup
 set backupdir=/tmp
 set directory=/tmp
 
-" Whitespace
-autocmd BufWritePre * :%s/\s\+$//e
-
 " =================================== Visual ===================================
 
 set cursorline
@@ -47,6 +44,15 @@ set t_Co=256
 set laststatus=2
 set statusline=\ %F\ %m
 
+" Highlights
+highlight Cursor ctermfg=13
+highlight ErrorMsg ctermbg=7
+highlight Search ctermfg=7 ctermbg=none cterm=underline
+highlight StatusLine ctermbg=0 ctermfg=14
+highlight Visual ctermbg=8 ctermfg=7
+
+" =================================== Editing ==================================
+
 " Line Wrapping
 set linebreak
 set wrap
@@ -55,17 +61,14 @@ set wrap
 set autoindent
 set expandtab
 set listchars=eol:¬
-nnoremap <leader>l :set list!<CR>
 set shiftwidth=2
 set smartindent
 set softtabstop=2
 
-" Highlights
-highlight Cursor ctermfg=13
-highlight ErrorMsg ctermbg=7
-highlight Search ctermfg=7 ctermbg=none cterm=underline
-highlight StatusLine ctermbg=0 ctermfg=14
-highlight Visual ctermbg=8 ctermfg=7
+nnoremap <leader>l :set list!<CR>
+
+" Whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ================================= Navigation =================================
 
