@@ -46,7 +46,7 @@ set statusline=\ %F\ %m
 
 " Highlights
 highlight Cursor ctermfg=13
-highlight ErrorMsg ctermbg=7
+highlight ErrorMsg ctermfg=15 ctermbg=9
 highlight Search ctermfg=7 ctermbg=none cterm=underline
 highlight StatusLine ctermbg=0 ctermfg=14
 highlight Visual ctermbg=8 ctermfg=7
