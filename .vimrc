@@ -110,7 +110,7 @@ augroup languages
   autocmd!
 
 " HTML
-  autocmd FileType html nnoremap <leader>r :silent !open -a Safari %<CR>:redraw!<CR>
+  autocmd FileType html nnoremap <leader>r :silent !open %<CR>:redraw!<CR>
   autocmd FileType html setlocal commentstring=<!--\ %s\ -->
   autocmd FileType html inoremap <leader>/ </<C-X><C-O>
 
