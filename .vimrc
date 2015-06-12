@@ -167,6 +167,9 @@ set wildignore+=*.gif,*.jpg,*.png
 
 " =============================== Miscellaneous ================================
 
+" Prevent Ex mode
+nnoremap Q <nop>
+
 augroup miscellaneous
   autocmd!
 
