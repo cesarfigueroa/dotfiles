@@ -13,7 +13,7 @@
         au = add --update
         amend = commit --amend -C HEAD
         assume = update-index --assume-unchanged
-        noassume = update-index --no-assume-unchanged
+        no-assume = update-index --no-assume-unchanged
         b = branch
         c = clone
         cl = clone --depth=1
