@@ -37,7 +37,6 @@
         rl = reflog
         s = status --untracked-files
         u = reset HEAD
-        wd = diff --word-diff
         ws = diff --check
 [credential]
 	helper = osxkeychain
