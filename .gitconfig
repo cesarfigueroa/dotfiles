@@ -36,6 +36,9 @@
         rc = rebase --continue
         rl = reflog
         s = status --untracked-files
+        sa = stash apply
+        sl = stash list
+        sp = stash pop
         u = reset HEAD
         ws = diff --check
 [credential]
