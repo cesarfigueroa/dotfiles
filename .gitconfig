@@ -39,6 +39,7 @@
         sa = stash apply
         sl = stash list
         sp = stash pop
+        ss = show stash
         u = reset HEAD
         ws = diff --check
 [credential]
