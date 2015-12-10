@@ -28,6 +28,7 @@
         g = grep --color-always --ignore-case
         h = help
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit
+        lf = ls-files
         ll = ! git l master..
         p = push
         pb = ! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
