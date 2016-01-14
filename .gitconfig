@@ -41,6 +41,7 @@
         sl = stash list
         sp = stash pop
         ss = show stash
+        su = stash --include-untracked
         u = reset HEAD
         ws = diff --check
 [credential]
