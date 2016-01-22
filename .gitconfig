@@ -17,6 +17,7 @@
         b = branch
         c = clone
         cl = clone --depth=1
+        cf = commit --fixup
         cm = commit -m
         co = checkout
         cp = cherry-pick
@@ -50,3 +51,5 @@
 	autocorrect = 0
 [push]
 	default = simple
+[rebase]
+	autosquash = true
