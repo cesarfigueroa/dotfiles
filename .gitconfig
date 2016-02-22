@@ -37,6 +37,7 @@
         pl = pull --ff-only
         ra = rebase --abort
         rc = rebase --continue
+        ri = rebase --interactive
         rl = reflog
         s = status --untracked-files
         sa = stash apply
