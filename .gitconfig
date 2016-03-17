@@ -15,6 +15,7 @@
         assume = update-index --assume-unchanged
         no-assume = update-index --no-assume-unchanged
         b = branch
+        bm = branch --merged
         c = clone
         cl = clone --depth=1
         cf = commit --fixup
