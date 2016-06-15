@@ -22,6 +22,7 @@
         cm = commit -m
         co = checkout
         cp = cherry-pick
+        cv = commit --verbose
         d = diff
         ds = diff --staged
         dsw = diff --staged --color-words
@@ -36,12 +37,14 @@
         pb = ! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
         pf = push --force-with-lease
         pl = pull --ff-only
+        r = rebase
         ra = rebase --abort
         rc = rebase --continue
         ri = rebase --interactive
         rl = reflog
         s = status --untracked-files
         sa = stash apply
+        si = status --ignored
         sl = stash list
         sp = stash pop
         ss = show stash
