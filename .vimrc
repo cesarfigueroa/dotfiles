@@ -138,7 +138,7 @@ augroup languages
   autocmd FileType cucumber nnoremap <leader>r :! cucumber %<CR>
 
 " RSpec
-  autocmd BufRead,BufNewFile *_spec.rb nnoremap <leader>r :! rspec %<CR>
+  autocmd BufRead,BufNewFile *_spec.rb nnoremap <leader>r :! bundle exec rspec %<CR>
 
 " Slim
   autocmd BufRead,BufNewFile *.slim :set filetype=slim
