@@ -27,7 +27,3 @@ setopt prompt_subst
 unsetopt nomatch
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
   'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-# Aliases
-alias config='git --git-dir=$HOME/.config.git/ --work-tree=$HOME'
-alias rm='trash'
