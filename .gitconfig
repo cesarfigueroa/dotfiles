@@ -41,9 +41,12 @@
         ra = rebase --abort
         rc = rebase --continue
         ri = rebase --interactive
+        ris = ! git rebase --interactive $(git merge-base master HEAD)
         rl = reflog
+        rne = revert --no-edit
         s = status --untracked-files
         sa = stash apply
+        sh = show HEAD
         si = status --ignored
         sl = stash list
         sp = stash pop
