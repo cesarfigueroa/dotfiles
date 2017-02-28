@@ -24,7 +24,5 @@
   "editor.rulers": [80, 100]
   ,
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true,
-  "go.formatTool": "goimports",
-  "go.lintOnSave": false
+  "workbench.activityBar.visible": true
 }
