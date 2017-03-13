@@ -17,12 +17,15 @@
     "dist/": true,
     "deps/": true,
     "_build/": true,
-    "ts-build": true
+    "ts-build": true,
+    "ios/build/": true
   },
-  "editor.wrappingColumn": 120,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
   "editor.wrappingIndent": "indent",
   "editor.rulers": [80, 100]
   ,
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true
+  "workbench.activityBar.visible": true,
+  "workbench.welcome.enabled": false
 }
