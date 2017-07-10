@@ -15,7 +15,7 @@ colors
 
 # Prompt
 source ~/.git-prompt.sh
-PROMPT='%c %{$fg[red]%}$(__git_ps1 "(%s) ")%{$reset_color%}> '
+PROMPT='%c %{$fg[cyan]%}$(__git_ps1 "(%s) ")%{$reset_color%}> '
 
 # Enable Vi
 setopt vi
