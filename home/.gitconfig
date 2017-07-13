@@ -40,7 +40,7 @@
         r = rebase
         ra = rebase --abort
         rc = rebase --continue
-        rfm = ! git fetch origin master && git rebase master
+        rfm = pull --rebase origin master
         ri = rebase --interactive
         ris = ! git rebase --interactive $(git merge-base master HEAD)
         rl = reflog
