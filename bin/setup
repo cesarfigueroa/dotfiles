@@ -1,5 +1,37 @@
 #!/usr/bin/env bash
 
+install_homebrew() {
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+}
+
+install_software() {
+  brew install git
+  brew install node
+  brew install yarn # npm alternative
+  brew install rbenv # Ruby version management
+  brew install ripgrep # fast grep tool
+}
+
+install_apps() {
+  apps=(
+    1password
+    docker
+    google-chrome
+    imageoptim
+    notational-velocity
+    sketch
+    slack
+    spotify
+    visual-studio-code
+    zeplin
+  )
+
+  for app in "${apps[@]}"
+  do
+    brew cask install $app
+  done
+}
+
 install_vim() {
   git clone git://github.com/b4winckler/vim.git
   cd vim
@@ -16,6 +48,9 @@ configure_osx_flags() {
   defaults write NSGlobalDomain KeyRepeat -int 0
 }
 
+install_homebrew
+install_software
+install_apps
 install_vim
 configure_osx_flags
 
