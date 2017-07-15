@@ -37,6 +37,7 @@ install_vim() {
   cd vim
   ./configure --enable-rubyinterp --enable-multibyte --with-x --enable-clipboard
   make && sudo make install
+  rm -r vim
 }
 
 configure_osx_flags() {
