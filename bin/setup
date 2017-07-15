@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+install_vim() {
+  git clone git://github.com/b4winckler/vim.git
+  cd vim
+  ./configure --enable-rubyinterp --enable-multibyte --with-x --enable-clipboard
+  make && sudo make install
+}
+
+configure_osx_flags() {
+  defaults write -g ApplePressAndHoldEnabled -bool false
+  defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+  chflags nohidden ~/Library
+  defaults write com.apple.dock no-glass -bool true
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+  defaults write NSGlobalDomain KeyRepeat -int 0
+}
+
+install_vim
+configure_osx_flags
+
+# Restart UI Processes
+processes=(Finder Dock)
+for process in "${processes[@]}"
+do
+  killall $process
+done
