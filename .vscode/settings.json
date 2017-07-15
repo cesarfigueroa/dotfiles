@@ -5,7 +5,7 @@
   "editor.tabSize": 2,
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontFamily": "Source Code Pro",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "typescript.validate.enable": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,

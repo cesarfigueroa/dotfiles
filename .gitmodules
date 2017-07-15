@@ -1,15 +1,15 @@
-[submodule ".vim/bundle/endwise"]
-	path = .vim/bundle/endwise
+[submodule "home/.vim/bundle/endwise"]
+	path = home/.vim/bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule ".vim/bundle/commentary"]
-	path = .vim/bundle/commentary
+[submodule "home/.vim/bundle/commentary"]
+	path = home/.vim/bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
+[submodule "home/.vim/bundle/ctrlp"]
+	path = home/.vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/slim"]
-	path = .vim/bundle/slim
+[submodule "home/.vim/bundle/slim"]
+	path = home/.vim/bundle/slim
 	url = git://github.com/slim-template/vim-slim.git
-[submodule ".vim/bundle/coffee-script"]
-	path = .vim/bundle/coffee-script
+[submodule "home/.vim/bundle/coffee-script"]
+	path = home/.vim/bundle/coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
