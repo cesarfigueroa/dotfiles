@@ -49,11 +49,16 @@ configure_osx_flags() {
   defaults write NSGlobalDomain KeyRepeat -int 0
 }
 
+create_developer_directory() {
+  mkdir $HOME/Developer
+}
+
 install_homebrew
 install_software
 install_apps
 install_vim
 configure_osx_flags
+create_developer_directory
 
 # Restart UI Processes
 processes=(Finder Dock)
