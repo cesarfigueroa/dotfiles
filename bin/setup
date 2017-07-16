@@ -46,7 +46,9 @@ configure_osx_flags() {
   chflags nohidden ~/Library
   defaults write com.apple.dock no-glass -bool true
   defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-  defaults write NSGlobalDomain KeyRepeat -int 0
+  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+  defaults write NSGlobalDomain KeyRepeat -int 1
+  defaults write NSGlobalDomain InitialKeyRepeat -int 10
 }
 
 create_developer_directory() {
