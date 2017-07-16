@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+
+install_homebrew() {
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+}
+
+install_software() {
+  brew install git
+  brew install node
+  brew install yarn # npm alternative
+  brew install rbenv # Ruby version management
+  brew install ripgrep # fast grep tool
+}
+
+install_apps() {
+  apps=(
+    1password
+    docker
+    google-chrome
+    imageoptim
+    notational-velocity
+    sketch
+    slack
+    spotify
+    visual-studio-code
+    zeplin
+  )
+
+  for app in "${apps[@]}"
+  do
+    brew cask install $app
+  done
+}
+
+install_vim() {
+  git clone git://github.com/b4winckler/vim.git
+  cd vim
+  ./configure --enable-rubyinterp --enable-multibyte --with-x --enable-clipboard
+  make && sudo make install
+  rm -r vim
+}
+
+configure_osx_flags() {
+  defaults write -g ApplePressAndHoldEnabled -bool false
+  defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+  chflags nohidden ~/Library
+  defaults write com.apple.dock no-glass -bool true
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+  defaults write NSGlobalDomain KeyRepeat -int 0
+}
+
+create_developer_directory() {
+  mkdir $HOME/Developer
+}
+
+install_homebrew
+install_software
+install_apps
+install_vim
+configure_osx_flags
+create_developer_directory
+
+# Restart UI Processes
+processes=(Finder Dock)
+for process in "${processes[@]}"
+do
+  killall $process
+done
