@@ -2,5 +2,9 @@
   {
     "key": "cmd+t",
     "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.showCommands"
   }
 ]
