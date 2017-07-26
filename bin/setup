@@ -10,6 +10,7 @@ install_software() {
   brew install yarn # npm alternative
   brew install rbenv # Ruby version management
   brew install ripgrep # fast grep tool
+  brew install tree
 }
 
 install_apps() {
