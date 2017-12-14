@@ -21,6 +21,7 @@
         cf = commit --fixup
         cm = commit -m
         co = checkout
+        com = checkout master
         cp = cherry-pick
         cv = commit --verbose
         d = diff
