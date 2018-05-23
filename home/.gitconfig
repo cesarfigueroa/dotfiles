@@ -14,7 +14,7 @@
         amend = commit --amend -C HEAD
         assume = update-index --assume-unchanged
         no-assume = update-index --no-assume-unchanged
-        b = branch
+        b = branch --sort=-committerdate
         bm = branch --merged
         c = clone
         cl = clone --depth=1
