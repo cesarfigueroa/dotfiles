@@ -19,7 +19,9 @@ PROMPT='%c %{$fg[cyan]%}$(__git_ps1 "(%s) ")%{$reset_color%}> '
 
 # Enable Vi
 setopt vi
+bindkey -v
 bindkey "^?" backward-delete-char
+bindkey '^R' history-incremental-search-backward
 
 # Options
 setopt hist_ignore_all_dups
