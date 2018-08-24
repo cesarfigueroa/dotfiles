@@ -36,6 +36,7 @@
         ll = ! git l master..
         p = push
         pb = ! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+        pc = reset --mixed head^
         pf = push --force-with-lease
         pl = pull --ff-only
         r = rebase
