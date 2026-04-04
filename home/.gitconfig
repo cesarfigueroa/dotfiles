@@ -21,7 +21,7 @@
         cf = commit --no-verify --fixup
         cm = commit --no-verify -m
         co = checkout
-        com = checkout master
+        com = checkout main
         cp = cherry-pick
         cv = commit --no-verify --verbose
         d = diff
@@ -33,7 +33,7 @@
         h = help
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit
         lf = ls-files
-        ll = ! git l master..
+        ll = ! git l main..
         p = push
         pb = ! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
         pc = reset --mixed head^
@@ -43,9 +43,9 @@
         r = rebase
         ra = rebase --abort
         rc = rebase --continue
-        rfm = pull --rebase origin master
+        rfm = pull --rebase origin main
         ri = rebase --no-verify --interactive
-        ris = ! git rebase --no-verify --interactive $(git merge-base master HEAD)
+        ris = ! git rebase --no-verify --interactive $(git merge-base main HEAD)
         rl = reflog
         rne = revert --no-edit
         s = status --untracked-files
@@ -68,3 +68,5 @@
 	autosquash = true
 [diff]
 	compactionHeuristic = true
+[init]
+	defaultBranch = main
