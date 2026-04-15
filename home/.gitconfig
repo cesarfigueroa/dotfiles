@@ -11,19 +11,19 @@
         a = add
         ap = add --patch
         au = add --update
-        amend = commit --amend -C HEAD
+        amend = commit --no-verify --amend -C HEAD
         assume = update-index --assume-unchanged
         no-assume = update-index --no-assume-unchanged
         b = branch --sort=-committerdate
         bm = branch --merged
         c = clone
         cl = clone --depth=1
-        cf = commit --fixup
-        cm = commit -m
+        cf = commit --no-verify --fixup
+        cm = commit --no-verify -m
         co = checkout
         com = checkout master
         cp = cherry-pick
-        cv = commit --verbose
+        cv = commit --no-verify --verbose
         d = diff
         ds = diff --staged
         dsw = diff --staged --color-words
@@ -39,12 +39,13 @@
         pc = reset --mixed head^
         pf = push --force-with-lease
         pl = pull --ff-only
+        pop = reset --mixed HEAD^
         r = rebase
         ra = rebase --abort
         rc = rebase --continue
         rfm = pull --rebase origin master
-        ri = rebase --interactive
-        ris = ! git rebase --interactive $(git merge-base master HEAD)
+        ri = rebase --no-verify --interactive
+        ris = ! git rebase --no-verify --interactive $(git merge-base master HEAD)
         rl = reflog
         rne = revert --no-edit
         s = status --untracked-files
