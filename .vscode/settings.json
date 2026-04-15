@@ -52,5 +52,6 @@
   "liveshare.featureSet": "insiders",
   "emmet.showExpandedAbbreviation": "never",
   "editor.fontSize": 15,
-  "editor.fontWeight": "500"
+  "editor.fontWeight": "500",
+  "workbench.colorTheme": "GitHub Dark Default"
 }
